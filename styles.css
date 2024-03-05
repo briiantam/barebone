@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #00020e; /* Dark background color */
+    background-color: #04305e; /* Dark background color */
     color: #fff; /* White text color */
 }
 
@@ -104,7 +104,73 @@ p {
     color: #000; /* Black text color on hover */
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust the spacing between cards */
+  }
+
+.company-card {
+    flex-direction: column;
+    justify-content: space-around; /* Adjust alignment */
+    position: relative;
+    border: 1px solid #ccc;
+    width: 380px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(199, 199, 199, 0.1);
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.company-card h3 {
+  font-size: 20px;
+  color: #04305e;
+  margin-bottom: 15px;
+}
+
+.company-card p {
+    width: 90%; /* Adjust as needed */
+    font-size: 16px;
+    line-height: 0.5;
+    color: #000;
+    text-align: left; 
+    margin-bottom: 15px;
+    margin-top: px;
+}
+
+.company-card button {
+    position: absolute; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #04305e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company-card button:hover {
+  background-color: #164980;
+}
+  
+.company-card .cta-button {
+    margin-top: auto;
+}
+
 /* Add some responsive design */
+@media (max-width: 992px) {
+    .company-card {
+      flex-basis: calc(50% - 20px); /* Make each card take up 50% of the container width minus margin */
+    }
+  }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -122,5 +188,8 @@ p {
     .get-started {
         margin-top: 16px;
         margin-left: 0;
+    }
+    .company-card {
+        flex-basis: calc(100% - 20px); /* Make each card take up 100% of the container width minus margin */
     }
 }

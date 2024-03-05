@@ -7,11 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="menu">
                 <a href="about.html">About Us</a>
                 <a href="team.html">Team</a>
-                <a href="#" class="sign-in">Sign In</a>
-                <a href="/create_account" class="get-started">Get Started</a>
+                <a href="portal.html">Portal (Mock)</a>
             </div>
         </div>
     </nav>
     `;
     document.body.insertAdjacentHTML('afterbegin', nav);
 });
+
+//For future use
+//<a href="#" class="sign-in">Sign In</a>
+//<a href="/create_account" class="get-started">Get Started</a>

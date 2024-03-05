@@ -64,8 +64,8 @@ def create_account():
         # Redirect the user to the root page after account creation
         return redirect(url_for('index'))
     
-    # Show the form
-    return render_template('create_account.html')
+    else:# Show the form
+        return render_template('create_account.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

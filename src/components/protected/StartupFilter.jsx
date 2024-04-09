@@ -8,6 +8,7 @@ import {
 } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -193,7 +194,7 @@ export default function Example() {
                     {sortOptions.map((option) => (
                       <Menu.Item key={option.name}>
                         {({ active }) => (
-                          <a
+                          <Link
                             href={option.href}
                             className={classNames(
                               option.current
@@ -204,7 +205,7 @@ export default function Example() {
                             )}
                           >
                             {option.name}
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     ))}

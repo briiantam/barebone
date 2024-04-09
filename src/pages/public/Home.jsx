@@ -2,6 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import StartupLogos from "../../components/public/Logos";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import { key_offerings } from "./PublicContent";
+import { Link } from "react-router-dom";
 
 export default function Example() {
   return (
@@ -76,32 +77,32 @@ export default function Example() {
             </dl>
           </div>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="/get-started"
+            <Link
+              to="/get-started"
               className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               Try Our Beta Product
-            </a>
+            </Link>
             {/*            
-            <a
-              href="#"
+            <Link
+              to="#"
               className="rounded-md border-solid border-2 border-white px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               I'm an Investor
-        </a>
+        </Link>
         */}
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="text-sm font-semibold leading-6 text-white"
             >
               About Us <span aria-hidden="true">→</span>
-            </a>
-            <a
-              href="/product"
+            </Link>
+            <Link
+              to="/product"
               className="text-sm font-semibold leading-6 text-white"
             >
               Our Product <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">

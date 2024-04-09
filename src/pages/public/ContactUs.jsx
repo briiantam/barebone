@@ -69,9 +69,9 @@ export default function Example() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-white" href="tel:+852 5498 9193">
+                  <Link className="hover:text-white" to="tel:+852 5498 9193">
                     +852 5498 9193
-                  </a>
+                  </Link>
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -83,12 +83,12 @@ export default function Example() {
                   />
                 </dt>
                 <dd>
-                  <a
+                  <Link
                     className="hover:text-white"
-                    href="mailto:info@barebone.io"
+                    to="mailto:info@barebone.io"
                   >
                     info@barebone.io
-                  </a>
+                  </Link>
                 </dd>
               </div>
             </dl>

@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
 const navigation = {
-    main: [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/About' },
-    { name: 'Product', href: '/Product' },
-    { name: 'Resources', href: '/Resources' },
-    { name: 'Contact', href: '/Contact' },
-    ]
-}
-    { 
-    {/*social: [
+  main: [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/About" },
+    { name: "Product", href: "/Product" },
+    { name: "Resources", href: "/Resources" },
+    { name: "Contact", href: "/Contact" },
+  ],
+};
+{
+  {
+    /*social: [
       {
         name: 'Facebook',
         href: '#',
@@ -70,38 +72,44 @@ const navigation = {
           </svg>
         ),
       },
-    ],*/}
+    ],*/
   }
-  
-  export default function Footer() {
-    return (
-      <footer className="bg-gray-900">
-        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-          <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-            {navigation.main.map((item) => (
-              <div key={item.name} className="pb-6">
-                <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-gray-100">
-                  {item.name}
-                </a>
-              </div>
-            ))}
-          </nav>
-          {/* Socials */}
-          {/* 
+}
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+        <nav
+          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          aria-label="Footer"
+        >
+          {navigation.main.map((item) => (
+            <div key={item.name} className="pb-6">
+              <Link
+                to={item.href}
+                className="text-sm leading-6 text-gray-300 hover:text-gray-100"
+              >
+                {item.name}
+              </Link>
+            </div>
+          ))}
+        </nav>
+        {/* Socials */}
+        {/* 
           <div className="mt-10 flex justify-center space-x-10">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <Link key={item.name} to={item.href} className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
           */}
-          <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-            &copy; Barebone Group Holdings Limited. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    )
-  }
-  
+        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+          &copy; Barebone Group Holdings Limited. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}

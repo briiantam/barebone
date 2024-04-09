@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Menu, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 import {
   ChartBarSquareIcon,
   Cog6ToothIcon,
@@ -90,41 +91,41 @@ export default function Example() {
                   <Menu.Items className="absolute right-0 z-10 mt-2.5 w-40 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                          to="#"
                           className={classNames(
                             active ? "bg-gray-50" : "",
                             "block px-3 py-1 text-sm leading-6 text-gray-900"
                           )}
                         >
                           Name
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                          to="#"
                           className={classNames(
                             active ? "bg-gray-50" : "",
                             "block px-3 py-1 text-sm leading-6 text-gray-900"
                           )}
                         >
                           Date updated
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                          to="#"
                           className={classNames(
                             active ? "bg-gray-50" : "",
                             "block px-3 py-1 text-sm leading-6 text-gray-900"
                           )}
                         >
                           Environment
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                   </Menu.Items>
@@ -150,7 +151,7 @@ export default function Example() {
                         <div className="h-2 w-2 rounded-full bg-current" />
                       </div>
                       <h2 className="min-w-0 text-sm font-semibold leading-6 text-gray-900">
-                        <a href={deployment.href} className="flex gap-x-2">
+                        <Link to={deployment.href} className="flex gap-x-2">
                           <span className="truncate">
                             {deployment.teamName}
                           </span>
@@ -159,7 +160,7 @@ export default function Example() {
                             {deployment.projectName}
                           </span>
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                       </h2>
                     </div>
                     <div className="mt-3 flex items-center gap-x-2.5 text-xs leading-5 text-gray-500">
@@ -198,12 +199,12 @@ export default function Example() {
               <h2 className="text-base font-semibold leading-7 text-gray-900">
                 Activity feed
               </h2>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="text-sm font-semibold leading-6 text-indigo-400"
               >
                 View all
-              </a>
+              </Link>
             </header>
             <ul role="list" className="divide-y divide-white/5">
               {activityItems.map((item) => (

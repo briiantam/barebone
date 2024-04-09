@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logos from "../../components/public/Logos";
 import CTA from "../../components/public/CTA";
 import { about_us_stats, about_us_team } from "./PublicContent";
+import { Link } from "react-router-dom";
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -72,12 +73,12 @@ export default function Example() {
                     innovating.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
-                    <a
-                      href="/product"
+                    <Link
+                      to="/product"
                       className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                     >
                       Explore Our Product
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -242,8 +243,8 @@ export default function Example() {
                     </p>
                     <ul role="list" className="mt-6 flex gap-x-6">
                       <li>
-                        <a
-                          href={person.linkedinUrl}
+                        <Link
+                          to={person.linkedinUrl}
                           className="text-gray-400 hover:text-white"
                         >
                           <span className="sr-only">LinkedIn</span>
@@ -259,7 +260,7 @@ export default function Example() {
                               clipRule="evenodd"
                             />
                           </svg>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

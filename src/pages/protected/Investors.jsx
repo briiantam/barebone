@@ -148,7 +148,7 @@ export default function Example() {
                     </div>
                     <div className="-ml-px flex w-0 flex-1">
                       <Link
-                        to={`tel:${person.telephone}`}
+                        to={``}
                         className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-1 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900"
                       >
                         <ChevronRightIcon

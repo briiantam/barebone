@@ -32,21 +32,36 @@ const filters = [
     ],
   },
   {
-    id: "color",
-    name: "Investor Type",
+    id: "fundraising-stage",
+    name: "Fundraising Stage",
     options: [
-      { value: "white", label: "White", checked: false },
-      { value: "beige", label: "Beige", checked: false },
-      { value: "blue", label: "Blue", checked: false },
+      { value: "pre-seed", label: "Pre-Seed", checked: false },
+      { value: "seed", label: "Seed", checked: false },
+      { value: "series-a", label: "Series A", checked: false },
+      // Add more stages as necessary
     ],
   },
   {
-    id: "sizes",
-    name: "Expected Investment Size",
+    id: "financials-arr",
+    name: "Annual Recurring Revenue (ARR)",
     options: [
-      { value: "s", label: "S", checked: false },
-      { value: "m", label: "M", checked: false },
-      { value: "l", label: "L", checked: false },
+      { value: "0", label: "Under $100K", checked: false },
+      { value: "100k-500k", label: "$100K to $500K", checked: false },
+      { value: "500k-1m", label: "$500K to $1M", checked: false },
+      { value: "1m+", label: "$1M+", checked: false },
+    ],
+  },
+  {
+    id: "fundraising-size",
+    name: "Fundraising Size",
+    options: [
+      { value: "under-100k", label: "Under $100K", checked: false },
+      { value: "100k-250k", label: "$100K to $250K", checked: false },
+      { value: "250k-500k", label: "$250K to $500K", checked: false },
+      { value: "500k-1m", label: "$500K to $1M", checked: false },
+      { value: "1m-2m", label: "$1M to $2M", checked: false },
+      { value: "2m-5m", label: "$2M to $5M", checked: false },
+      { value: "over-5m", label: "Over $5M", checked: false },
     ],
   },
 ];

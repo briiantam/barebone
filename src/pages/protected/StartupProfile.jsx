@@ -13,7 +13,7 @@ export default function Example() {
           {/* LHS */}
           <main className="lg:pr-96 sm:px-6 sm:py-6 lg:px-8">
             <div className="px-4 sm:px-0">
-              <h3 className="text-base font-semibold leading-7 text-gray-900">
+              <h3 className="text-base font-semibold leading-7 mt-4 text-gray-900">
                 Applicant Information
               </h3>
               <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-800">

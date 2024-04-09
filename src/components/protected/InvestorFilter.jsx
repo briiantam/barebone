@@ -32,21 +32,28 @@ const filters = [
     ],
   },
   {
-    id: "color",
+    id: "investor-type",
     name: "Investor Type",
     options: [
-      { value: "white", label: "White", checked: false },
-      { value: "beige", label: "Beige", checked: false },
-      { value: "blue", label: "Blue", checked: false },
+      { value: "angel-investor", label: "Angel Investor", checked: false },
+      {
+        value: "venture-capitalist",
+        label: "Venture Capitalist",
+        checked: false,
+      },
     ],
   },
   {
-    id: "sizes",
+    id: "investment-size",
     name: "Expected Investment Size",
     options: [
-      { value: "s", label: "S", checked: false },
-      { value: "m", label: "M", checked: false },
-      { value: "l", label: "L", checked: false },
+      { value: "under-100k", label: "Under $100K", checked: false },
+      { value: "100k-to-250k", label: "$100K to $250K", checked: false },
+      { value: "250k-to-500k", label: "$250K to $500K", checked: false },
+      { value: "500k-to-1m", label: "$500K to $1M", checked: false },
+      { value: "1m-to-2m", label: "$1M to $2M", checked: false },
+      { value: "2m-to-5m", label: "$2M to $5M", checked: false },
+      { value: "over-5m", label: "Over $5M", checked: false },
     ],
   },
 ];
